@@ -32,12 +32,13 @@ class Api::MessagesController < ApplicationController
   end
 
   def random
-    @message = Message.order("RANDOM()").first
+    @message = Message.order('RANDOM()').first
 
     render json: @message, status: :ok
   end
 
   private
+
   def message_params
     params.require(:message).permit(:content, :header)
   end
