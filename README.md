@@ -132,6 +132,13 @@ bundle install
 yarn install
 ```
 
+setup database, accordingt o requirements of your system, you might need to fill it in `database.yml` file
+
+run the command
+```sh
+rails db:setup
+```
+
 Watch the changes
 ```s
 yarn build --watch
